@@ -1,0 +1,76 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+metalBlockVariantHelperDyfed,blocks,Variant,,,Metal Storage Items (Dyfed)
+metalBlockVariantHelperDyfedDesc,blocks,Variant,,,"Metal lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackSmallMagazinesDyfed,blocks,Deco,,,Gun Rack - Magazines
+cntGunRackSmallMagazinesDyfedDesc,blocks,Deco,,,"Gun Rack - Magazines cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackSmallArmorDyfed,blocks,Deco,,,Gun Rack - Armor (Dyfed)
+ntGunRackSmallArmorDyfedDesc,blocks,Deco,,,"Gun Rack - Armor (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackLargeGuns01Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
+cntGunRackLargeGuns01DyfedDesc,blocks,Deco,,,"Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackLargeGuns02Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
+cntGunRackLargeGuns02DyfedDesc,blocks,Deco,,,"Dyfed Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+resourceNutsBoltsDyfed,items,Items,,,Nuts and Bolts
+resourceNutsBoltsDyfedDesc,items,Items,,,"Used in the assembly of bigger components."
+resourceCrushedSandBundleDyfed,items,Item,,,Stack of Crushed Sand (6000)
+resourceCrushedSandBundleDyfedDesc,items,Item,,,"This is a compact stack of crushed sand. Use this item to open and unpack it."
+resourceClayLumpBundleDyfed,items,Item,,,Stack of Clay Lumps (6000)
+resourceClayLumpBundleDyfedDesc,items,Item,,,"This is a compact stack of clay lumps.  Use this item to open and unpack it."
+woodStorageBlockVariantHelperDyfed,blocks,Variant,,,Wood Storage Items (Dyfed)
+woodStorageBlockVariantHelperDyfedDesc,blocks,Variant,,,"Wood lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntWoodCrateDyfed,blocks,Container,,,Wooden Storage Crate (Dyfed)
+cntWoodCrateDyfedDesc,blocks,Container,,,"A lockable storage crate that can be written on. Press & hold [action:local:Activate][action:permanent:Activate] to lock it and set a combination."
+cntShippingCrateShamwayDyfed,blocks,Container,,,Shamway Storage Crate (Dyfed)
+cntShippingCrateShamwayDyfedDesc,blocks,Container,,,"Shamway lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateLabEquipmentDyfed,blocks,Container,,,Pop-N-Pills Storage Crate (Dyfed)
+cntShippingCrateLabEquipmentDyfedDesc,blocks,Container,,,"Pop-N-Pills lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateBookstoreDyfed,blocks,Container,,,Crack-A-Book Storage Crate (Dyfed)
+cntShippingCrateBookstoreDyfedDesc,blocks,Container,,,"Crack-A-Book lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateCarPartsDyfed,blocks,Container,,,Pass-N-Gas Storage Crate (Dyfed)
+cntShippingCrateCarPartsDyfedDesc,blocks,Container,,,"Pass-N-Gas lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateShotgunMessiahDyfed,blocks,Container,,,Shotgun Messiah Storage Crate (Dyfed)
+cntShippingCrateShotgunMessiahDyfedDesc,blocks,Container,,,"Shotgun Messiah lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateWorkingStiffsDyfed,blocks,Container,,,Working Stiff Storage Crate (Dyfed)
+cntShippingCrateWorkingStiffsDyfedDesc,blocks,Container,,,"Working Stiff lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateSavageCountryDyfed,blocks,Container,,,Savage Country Storage Crate (Dyfed)
+cntShippingCrateSavageCountryDyfedDesc,blocks,Container,,,"Savage Country Crate lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateMoPowerElectronicsDyfed,blocks,Container,,,Mo Power Electronics Storage Crate (Dyfed)
+cntShippingCrateMoPowerElectronicsDyfedDesc,blocks,Container,,,"A Mo Power Electronics lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+streetLight01Dyfed,blocks,Light,,,Working Street Light (Dyfed)
+streetLight01DyfedDesc,blocks,Light,,,"Use the wiring tool to connect a power source to this light and you should be able to turn it on.\n\nRepair with Forged Iron and Electrical Parts."
+midsizedGeneratorDyfed,blocks,blocks,,,MidSized Generator (Dyfed)
+midsizedGeneratorDyfedDesc,blocks,block,,,"A generator that 2x+ more powerful than a standard one."
+largeGeneratorDyfed,blocks,block,,,Large Generator (Dyfed)
+largeGeneratorDyfedDesc,blocks,block,,,"A generator that is 5x more powerful than any other generator in the game."
+electricianT5,progression,progression,,,"Bring on the Power, Bro!"
+cntWallOvenWorkingDyfed,blocks,Block,,,Working Wall Oven (Dyfed)
+cntStoveWorkingDyfed,blocks,Block,,,Working Modern Stove (Dyfed)
+tableLampLightDyfed,blocks,Light,,,Table Lamp (Dyfed)
+workLightDyfed,blocks,Light,,,Work Light (Dyfed)
+signExitLightDyfed,blocks,Light,,,Exit Sign (Dyfed)
+ceilingFanLightDyfed,blocks,Light,,,Ceiling Fan Light (Dyfed)
+signShopOpenDyfed,blocks,Sign,,,Shop Sign: Open (Dyfed)
+deskLampLightDyfed,blocks,Light,,,Desk Lamp (Dyfed)
+lightPlayerVariantHelperDyfed,blocks,Light,,,Working Lamps and Lights (Dyfed)
+sconce1LightShadowDyfed,blocks,Light,,,Sconce Light (Dyfed)
+porchLight01Dyfed,blocks,Light,,,Old Outdoor Light (Dyfed)
+porchLight04BrassDyfed,blocks,Light,,,Brass Outdoor Light (Dyfed)
+cntGasGrillWorkingDyfed,blocks,Block,,,Working Gas Grill (Dyfed)
+cntCharcoalGrillWorkingDyfed,blocks,Block,,,Working Charcoal Grill (Dyfed)
+porchLight04Dyfed,blocks,Light,,,Iron Outdoor Light (Dyfed)
+ceilingLight02Dyfed,blocks,Light,,,Silver Dome Light (Dyfed)
+ceilingLight02BrassDyfed,blocks,Light,,,Brass Dome Light (Dyfed)
+ceilingLight04Dyfed,blocks,Light,,,Warehouse Ceiling Light (Dyfed)
+ceilingLight05Dyfed,blocks,Light,,,Silver Glass Light (Dyfed)
+ceilingLight05BrassDyfed,blocks,Light,,,Brass Glass Light (Dyfed)
+recessedLightDyfed,blocks,Light,,,Recessed Light (Dyfed)
+wallLight01Dyfed,blocks,Light,,,Warehouse Outdoor Light (Dyfed)
+fluorescentLightDyfed,blocks,Light,,,Hanging Fluorescent Light (Dyfed)
+trackLightDyfed,blocks,Light,,,Track Light (Dyfed)
+chandelierLightDyfed,blocks,Light,,,Chandelier (Dyfed)
+sinkKitchenWorkingDyfed,blocks,Block,,,Working Kitchen Sink (Dyfed)
+sinkCounterWorkingDyfed,blocks,Block,,,Sink with Water Filter (Dyfed)
+FilterSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. With its dual-filter system, you get clean drinking water in only a few minutes!"
+KitchenSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. It doesn't contain a filter, so you'll only get murky water out of it, but it's better than nothing, right?"
+stoveWorkingDyfedDesc,blocks,Block,,,"A place to cook food."
+meleeKatanaT3Dyfed,items,melee,,,Katana
+meleeKatanaT3DyfedDesc,items,melee,,,Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts.

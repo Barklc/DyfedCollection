@@ -1,0 +1,45 @@
+<configs>
+
+	<!-- Add sand and clay bundles to Art of Mining 5 recipe unloacks -->
+	<append xpath="/progression/perks/book[@name='perkArtOfMiningPallets']/effect_group/passive_effect[@level='1']/@tags">,resourceCrushedSandBundleDyfed,resourceClayLumpBundleDyfed</append>
+	
+	<!-- Add the Player Light Helper to the Electrician crafting skill -->
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT1']/unlock_entry/@item">,lightPlayerVariantDyfedHelper</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='25,100']/@tags">,lightPlayerVariantDyfedHelper</append>
+
+	<!-- Add Working Wall Ovens to the Home Cooking crafting skill -->
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@unlock_level='11,14,18,22,26']/unlock_entry[@item='foodSteakAndPotato']/@item">,cntCharcoalGrillWorkingDyfed,cntGasGrillWorkingDyfed</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='26,100']/@tags">,cntCharcoalGrillWorkingDyfed,cntGasGrillWorkingDyfed</append>
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@unlock_level='27,35,43,51,59']/unlock_entry[@item='foodChiliDog']/@item">,cntWallOvenWorkingDyfed,cntStoveWorkingDyfed</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='51,100']/@tags">,cntWallOvenWorkingDyfed,cntStoveWorkingDyfed</append>
+
+	<!-- Unlock medsizegenerator in craftindElectrician	-->	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']/unlock_entry/@item">,midsizedGeneratorDyfed</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags">,midsizedGeneratorDyfed</append>
+	
+	<!-- Unlock largeGenerator in craftingElectriciian
+	<sppend xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
+		<display_entry icon="largeGeneratorDyfed" name_key="electricianT5" has_quality="false" unlock_level="100" >
+			<unlock_entry item="largeGeneratorDyfed" unlock_tier="1" />
+		</display_entry>
+	</append>
+	<sppend xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group>">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="largeGeneratorDyfed"/>
+	</append>
+	 -->
+	 
+	<!-- Unlock katana in creaftingBlades Skill -->
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/@max_level">100</set>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<display_entry item="meleeKatanaT3Dyfed" unlock_level="75,80,85,90,95,100" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="meleeKatanaT3Dyfed"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="80,85,90,95,100" value="1,2,3,4,5" tags="meleeKatanaT3Dyfed"/>
+	</append>			
+		
+
+</configs>
