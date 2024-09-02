@@ -79,13 +79,13 @@
 		</recipe>
 		
 		<!-- Metal item for player storage (lockable) -->
-		<recipe name="metalBlockVariantHelperDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="metalBlockVariantHelperDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 		
 		<!-- Wood item for player storage (lockable) -->
-		<recipe name="woodStorageBlockVariantHelperDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="woodStorageBlockVariantHelperDyfed" count="1" craft_time="30">
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
@@ -97,13 +97,13 @@
 		</recipe>
 	
 		<!-- Fridge Stainless Steel storage (lockable) -->
-		<recipe name="cntFridgeStainlessSteelDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="cntFridgeStainlessSteelDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 		
 		<!-- Pill Case storage (lockable) -->
-		<recipe name="cntPillCaseDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="cntPillCaseDyfed" count="1" craft_time="30" >
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
@@ -115,7 +115,7 @@
 			<ingredient name="resourceNutsBoltsDyfed" count="10"/>
 		</recipe>
 		
-		<recipe name="midsizedGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+		<recipe name="midsizedGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="180"/>
 			<ingredient name="resourceMechanicalParts" count="38"/>
 			<ingredient name="resourceElectricParts" count="34"/>
@@ -178,13 +178,10 @@
 			</effect_group>			
 		</recipe>
 		
-		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" craft_area="workbench" tags="perkDeepCuts, learnable, workbenchCrafting">
+		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" tags="perkDeepCuts, learnable, workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="20"/>
 			<ingredient name="resourceScrapPolymers" count="50"/>
 			<ingredient name="resourceOil" count="5"/>
-			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
-			</effect_group>
 		</recipe>
 
     </append>	
