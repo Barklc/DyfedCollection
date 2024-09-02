@@ -178,10 +178,13 @@
 			</effect_group>			
 		</recipe>
 		
-		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" tags="perkDeepCuts">
+		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" craft_area="workbench" tags="perkDeepCuts, learnable, workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="20"/>
 			<ingredient name="resourceScrapPolymers" count="50"/>
 			<ingredient name="resourceOil" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="6" operation="base_add" value="1" tags="resourceLegendaryParts"/>
+			</effect_group>
 		</recipe>
 
     </append>	

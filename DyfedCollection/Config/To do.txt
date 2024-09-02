@@ -84,17 +84,4 @@ questGeneratorLarge.png rename to GeneratorLargeDyfed.png
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
 </block>
 
-<item name="CarMotorDyfed">
-	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Mmetal"/>
-	<property name="CustomIcon" value="CarMotorDyfed"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="Material" value="MmechanicalParts"/>
-	<property name="Weight" value="200"/>
-	<property name="EconomicValue" value="1000"/>
-	<property name="Group" value="Resources"/>
-</item>
-add to loot so show up as often as a small motor
 progression.xml 798 - append recipe to unlock
