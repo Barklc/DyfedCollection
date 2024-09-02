@@ -486,6 +486,7 @@
 			<property name="Extends" value="cntWoodCrateDyfed"/>
 			<property name="CustomIcon" value="cntPillCaseClosed"/>
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 			<drop event="Destroy" name="resourceWood" count="5,10"/>
 			<property name="DowngradeBlock" value="cntPillCaseInsecureDyfed"/>
 		</block>
@@ -495,6 +496,7 @@
 			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
 			<property name="CustomIcon" value="cntPillCaseClosed"/>
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 			<drop event="Destroy" name="resourceWood" count="5,10"/>
 			<property class="UpgradeBlock">
 				<property name="ToBlock" value="cntPillCaseDyfed"/>

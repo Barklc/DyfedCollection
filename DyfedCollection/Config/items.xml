@@ -47,7 +47,7 @@
 		<!-- New item will be Katana -->
 		<item name="meleeKatanaT3Dyfed">
 			<property name="DescriptionKey" value="meleeKatanaT3DyfedDesc"/>
-			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
+			<property name="Tags" value="machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic"/>
 			<property name="DisplayType" value="meleeKnife"/>
 			<property name="HoldType" value="47"/>
 			<property name="Meshfile" value="#@modfolder:Resources/HD Samuri.unity3d?HD Shuriken Katana.Prefab"/>  <!-- Purchased From Unity With Donation Money & Licensed To War3zuk -->
@@ -100,10 +100,10 @@
 					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 				</property>
 			</property>
-			<effect_group name="meleeWpnBladeT3Machete">
+			<effect_group name="meleeKatanaT3Dyfed">
 				<passive_effect name="EntityDamage" operation="base_set" value="30.5" tags="perkDeepCuts"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="30" tags="perkDeepCuts"/>
-				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfBlows"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfAgility"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="15.2" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="288,673" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeepCuts"/>
