@@ -586,12 +586,10 @@
 		</block>
 		
 		<!-- Large Generator -->
-		<!-- Update slots to largeMotor when item is added -->
-		<!-- Uncomment when large engines ara added
-		<block name="largeGeneratorDyfed">
+		<block name="largeGeneratorDyfed" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
 			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="Generator"/>
-			<property name="SlotItem" value="smallEngine"/>
+			<property name="SlotItem" value="decoCarMotorFlat"/>
 			<property name="MaxFuel" value="20000"/>
 			<property name="MaxPower" value="45250"/>
 			<property name="OutputPerFuel" value="11250"/>

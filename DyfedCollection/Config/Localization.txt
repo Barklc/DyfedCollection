@@ -72,5 +72,7 @@ sinkCounterWorkingDyfed,blocks,Block,,,Sink with Water Filter (Dyfed)
 FilterSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. With its dual-filter system, you get clean drinking water in only a few minutes!"
 KitchenSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. It doesn't contain a filter, so you'll only get murky water out of it, but it's better than nothing, right?"
 stoveWorkingDyfedDesc,blocks,Block,,,"A place to cook food."
-meleeKatanaT3Dyfed,items,melee,,,Katana
+meleeKatanaT3Dyfed,items,melee,,,Katana (Dyfed)
 meleeKatanaT3DyfedDesc,items,melee,,,Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts.
+cntPillCaseDyfed,blocks,Container,,,Pill Case Wall Mounted (Dyfed)
+cntPillCaseDyfedDesc,blocks,Container,,,"A lockable storage Pill case for mounting on the wall. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
