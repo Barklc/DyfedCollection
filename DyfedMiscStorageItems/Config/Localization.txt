@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+cntPillCaseDyfed,blocks,Container,,,Pill Case Wall Mounted (Dyfed)
+cntPillCaseDyfedDesc,blocks,Container,,,"A lockable storage Pill case for mounting on the wall. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."

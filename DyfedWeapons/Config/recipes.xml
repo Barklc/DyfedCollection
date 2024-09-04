@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<!-- Add Katana melee weapon -->
+		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" tags="perkDeepCuts, learnable, workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceOil" count="5"/>
+		</recipe>
+    </append>	
+
+</configs>

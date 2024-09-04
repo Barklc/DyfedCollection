@@ -1,0 +1,52 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<!-- Craftable Streetlights -->
+		<recipe name="streetLight01Dyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceNutsBoltsDyfed" count="10"/>
+		</recipe>
+		
+		<!-- Mid-sized Generator -->		
+		<recipe name="midsizedGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="180"/>
+			<ingredient name="resourceMechanicalParts" count="38"/>
+			<ingredient name="resourceElectricParts" count="34"/>
+			<ingredient name="resourceScrapPolymers" count="80"/>
+			<ingredient name="carBattery" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".50,.40,.30,.20,.10" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<!-- Large Generator and decoCarMotorFlipped to decoCarMotorPlat -->
+		<recipe name="largeGeneratorDyfed" count="1" craft_area="workbench" tags="workbenchCrafting, learnable">
+			<ingredient name="resourceForgedSteel" count="600"/>
+			<ingredient name="resourceMechanicalParts" count="150"/>
+			<ingredient name="resourceElectricParts" count="120"/>
+			<ingredient name="resourceScrapPolymers" count="500"/>
+			<ingredient name="carBattery" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".50,.40,.30,.20,.10" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
+			</effect_group>
+		</recipe>
+		
+		<recipe name="decoCarMotorFlat" count="1" craft_area="workbench">
+			<ingredient name="decoCarMotorFlipped" count="1"/>
+		</recipe>
+		
+		<!-- Add working lights recipes -->
+		<recipe name="lightPlayerVariantHelperDyfed" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting,learnable,perkAdvancedEngineering">
+			<ingredient name="resourceScrapBrass" count="10"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceForgedIron,resourceElectricParts"/>
+			</effect_group>			
+		</recipe>
+
+    </append>	
+
+</configs>

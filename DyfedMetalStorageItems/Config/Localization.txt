@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+metalBlockVariantHelperDyfed,blocks,Variant,,,Metal Storage Items (Dyfed)
+metalBlockVariantHelperDyfedDesc,blocks,Variant,,,"Metal lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackSmallMagazinesDyfed,blocks,Deco,,,Gun Rack - Magazines
+cntGunRackSmallMagazinesDyfedDesc,blocks,Deco,,,"Gun Rack - Magazines cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackSmallArmorDyfed,blocks,Deco,,,Gun Rack - Armor (Dyfed)
+ntGunRackSmallArmorDyfedDesc,blocks,Deco,,,"Gun Rack - Armor (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackLargeGuns01Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
+cntGunRackLargeGuns01DyfedDesc,blocks,Deco,,,"Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntGunRackLargeGuns02Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
+cntGunRackLargeGuns02DyfedDesc,blocks,Deco,,,"Dyfed Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."

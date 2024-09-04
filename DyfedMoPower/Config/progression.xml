@@ -1,0 +1,21 @@
+<configs>
+	
+	<!-- Add the Player Light Helper to the Electrician crafting skill -->
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT1']/unlock_entry/@item">,lightPlayerVariantDyfedHelper</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='25,100']/@tags">,lightPlayerVariantDyfedHelper</append>
+
+	<!-- Unlock medsizegenerator in craftindElectrician	-->	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']/unlock_entry/@item">,midsizedGeneratorDyfed</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags">,midsizedGeneratorDyfed</append>
+	
+	<!-- Unlock largeGenerator in craftingElectriciian	-->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
+		<display_entry icon="largeGeneratorDyfed" name_key="electricianT5" has_quality="false" unlock_level="100" >
+			<unlock_entry item="largeGeneratorDyfed" unlock_tier="1" />
+		</display_entry>
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="largeGeneratorDyfed"/>
+	</append>
+
+</configs>

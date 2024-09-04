@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+cntWallOvenWorkingDyfed,blocks,Block,,,Working Wall Oven (Dyfed)
+cntStoveWorkingDyfed,blocks,Block,,,Working Modern Stove (Dyfed)
+stoveWorkingDyfedDesc,blocks,Block,,,"A place to cook food."
+cntGasGrillWorkingDyfed,blocks,Block,,,Working Gas Grill (Dyfed)
+cntCharcoalGrillWorkingDyfed,blocks,Block,,,Working Charcoal Grill (Dyfed)
+sinkKitchenWorkingDyfed,blocks,Block,,,Working Kitchen Sink (Dyfed)
+sinkCounterWorkingDyfed,blocks,Block,,,Sink with Water Filter (Dyfed)
+FilterSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. With its dual-filter system, you get clean drinking water in only a few minutes!"
+KitchenSinkDyfedDesc,blocks,Block,,,"Craft this sink to have quicker access to water. It doesn't contain a filter, so you'll only get murky water out of it, but it's better than nothing, right?"
+

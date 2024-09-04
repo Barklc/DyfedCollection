@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<!-- Wood item for player storage (lockable) -->
+		<recipe name="woodStorageBlockVariantHelperDyfed" count="1" craft_time="30">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="10"/>
+		</recipe>
+		
+    </append>	
+	
+</configs>

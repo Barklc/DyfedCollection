@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="DyfedWoodStorageItems" />
+  <DisplayName value="Dyfed Collection - Wood Storage Items" />
+  <Description value="Adds multiple crafteable wooden items with storage." />
+  <Author value="Ulfric" />
+  <Version value="1.0"/>
+  <Website value="" />
+</xml>

@@ -1,0 +1,31 @@
+<configs>
+
+	<!-- Increase stack size of Radiators -->
+	<set xpath="/items/item[@name='resourceRadiator']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[starts-with(@name,'book')]/property[@name='Stacknumber']/@value">100</set>
+	<set xpath="/items/item[@name='masterSkillMagazine']/property[@name='Stacknumber']/@value">100</set>
+	
+	<append xpath="/items">
+		<!-- Used in other Dyfed Mods -->
+		<item name="resourceNutsBoltsDyfed">
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="NutsBoltsDyfed"/>
+			<property name="Material" value="MresourceScrapIron"/>
+			<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Tags" value="junk"/>
+			<property name="Group" value="Resources"/>
+			<property name="SoundPickup" value="nails_grab"/>
+			<property name="SoundPlace" value="nails_place"/>
+		</item>
+	</append>
+	
+	<!-- Extend the length of wires between components -->
+	<append xpath="/items/item[@name='meleeToolWireTool']/property[@class='Action1']">
+		<property name="MaxWireLength" value="40"/>
+	</append>
+	
+</configs>

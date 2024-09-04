@@ -1,0 +1,21 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+woodStorageBlockVariantHelperDyfed,blocks,Variant,,,Wood Storage Items (Dyfed)
+woodStorageBlockVariantHelperDyfedDesc,blocks,Variant,,,"Wood lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntWoodCrateDyfed,blocks,Container,,,Wooden Storage Crate (Dyfed)
+cntWoodCrateDyfedDesc,blocks,Container,,,"A lockable storage crate that can be written on. Press & hold [action:local:Activate][action:permanent:Activate] to lock it and set a combination."
+cntShippingCrateShamwayDyfed,blocks,Container,,,Shamway Storage Crate (Dyfed)
+cntShippingCrateShamwayDyfedDesc,blocks,Container,,,"Shamway lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateLabEquipmentDyfed,blocks,Container,,,Pop-N-Pills Storage Crate (Dyfed)
+cntShippingCrateLabEquipmentDyfedDesc,blocks,Container,,,"Pop-N-Pills lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateBookstoreDyfed,blocks,Container,,,Crack-A-Book Storage Crate (Dyfed)
+cntShippingCrateBookstoreDyfedDesc,blocks,Container,,,"Crack-A-Book lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateCarPartsDyfed,blocks,Container,,,Pass-N-Gas Storage Crate (Dyfed)
+cntShippingCrateCarPartsDyfedDesc,blocks,Container,,,"Pass-N-Gas lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateShotgunMessiahDyfed,blocks,Container,,,Shotgun Messiah Storage Crate (Dyfed)
+cntShippingCrateShotgunMessiahDyfedDesc,blocks,Container,,,"Shotgun Messiah lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateWorkingStiffsDyfed,blocks,Container,,,Working Stiff Storage Crate (Dyfed)
+cntShippingCrateWorkingStiffsDyfedDesc,blocks,Container,,,"Working Stiff lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateSavageCountryDyfed,blocks,Container,,,Savage Country Storage Crate (Dyfed)
+cntShippingCrateSavageCountryDyfedDesc,blocks,Container,,,"Savage Country Crate lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntShippingCrateMoPowerElectronicsDyfed,blocks,Container,,,Mo Power Electronics Storage Crate (Dyfed)
+cntShippingCrateMoPowerElectronicsDyfedDesc,blocks,Container,,,"A Mo Power Electronics lockable storage crate. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
