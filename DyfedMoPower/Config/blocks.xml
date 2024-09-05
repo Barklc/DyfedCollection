@@ -411,6 +411,38 @@
 			<property name="Group" value="Basics,Building,advBuilding"/>
 			<property name="PickupJournalEntry" value="shapeMenuTip"/>
 		</block>
+		
+		<block name="powerSwitchButtonDyfed">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Switch"/>
+			<property name="TriggerType" value="Switch"/>
+			<property name="CustomIcon" value='pushButtonSwitch01'/>
+			<property name="DescriptionKey" value="powerSwitchButtonDyfedDesc"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="UnlockedBy" value="craftingElectrician"/>
+			<property name="DisplayType" value="blockElectrical"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/powerSwitchButton_01Prefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="HandleFace" value="South"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="TraderStageTemplate" value="electricTier1"/><!-- switch -->
+			<property name="TakeDelay" value="5"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B155"/>
+			<property name="SortOrder2" value="0007"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property name="Tags" value="electricianSkill"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+		</block>
 	</append>
 	
 	<!-- set xpath="/blocks/block[@name='speaker']/property[@name='PlaySound']/@value">ZombieRadio</set-->	
