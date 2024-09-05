@@ -1,10 +1,6 @@
 <configs>
 
 	<append xpath="/lootcontainers">
-		<!-- PLAYER cntWoodCrateDyfed-->
-		<lootcontainer name="playerWoodStorageDyfed" count="0" size="8,8" sound_open="UseActions/crate_wood_open" sound_close="UseActions/crate_wood_close" loot_quality_template="qualBaseTemplate">
-			<item name="cobweb" count="0"/>
-		</lootcontainer>
 		<!-- PLAYER cntMetalCrateDyfed-->
 		<lootcontainer name="playerMetalStorageDyfed" count="0" size="8,8" sound_open="UseActions/crate_iron_open" sound_close="UseActions/crate_iron_close" loot_quality_template="qualBaseTemplate">
 			<item name="cobweb" count="0"/>

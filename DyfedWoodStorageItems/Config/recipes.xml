@@ -6,7 +6,12 @@
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
-		
+				
+		<!-- Pill Case storage (lockable) -->
+		<recipe name="cntPillCaseDyfed" count="1" craft_time="30" >
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceNail" count="10"/>
+		</recipe>
     </append>	
 	
 </configs>

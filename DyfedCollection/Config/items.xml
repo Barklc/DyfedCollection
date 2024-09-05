@@ -52,6 +52,7 @@
 			<property name="HoldType" value="47"/>
 			<property name="Meshfile" value="#@modfolder:Resources/HD Samuri.unity3d?HD Shuriken Katana.Prefab"/>  <!-- Purchased From Unity With Donation Money & Licensed To War3zuk -->
 			<property name="CustomIcon" value="meleeKatanaT3Dyfed" />
+			<property name="UnlockedBy" value='craftingBlades'/>
 			<property name="Material" value="MmeleeWpnBladeParts"/> 
 			<property name="Weight" value="6"/>
 			<property name="RepairTools" value="resourceRepairKit"/>

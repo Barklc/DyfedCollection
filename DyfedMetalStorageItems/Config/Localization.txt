@@ -9,3 +9,5 @@ cntGunRackLargeGuns01Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
 cntGunRackLargeGuns01DyfedDesc,blocks,Deco,,,"Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
 cntGunRackLargeGuns02Dyfed,blocks,Deco,,,Large Gun Rack - Guns (Dyfed)
 cntGunRackLargeGuns02DyfedDesc,blocks,Deco,,,"Dyfed Large Gun Rack - Guns (Dyfed) cabinet is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."
+cntFridgeStainlessSteelDyfed,blocks,Deco,,,Fridge with storage (Dyfed)
+cntFridgeStainlessSteelDyfedDesc,blocks,Deco,,,"Fridge with storage (Dyfed) is a lockable storage item. Press & hold [action:local:Activate][action:permanent:Activate] to lock it or set a combination."

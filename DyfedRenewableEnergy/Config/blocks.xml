@@ -1,0 +1,5 @@
+<configs>
+	<insertAfter xpath="/blocks/block[@name='solarbank']/property[@name='Stacknumber']">
+		<property name="UnlockedBy" value="perkSolarBankCompleteDyfed"/>
+	</insertAfter>
+</configs>

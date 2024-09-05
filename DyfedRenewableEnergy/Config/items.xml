@@ -1,0 +1,227 @@
+<configs>
+
+	<append xpath="items">
+
+		<!--Items of the Solar Barnks -->
+		<item name="resourceSolarBankFrameDyfed">
+			<property name="CustomIcon" value="SolarBankFrameDyfed"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="solarSkill"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceForgedSteel"/>
+			<property name="Stacknumber" value="50"/> <!-- STK loot -->
+			<property name="Weight" value="10"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="Group" value="Resource"/>
+			<property name="UnlockedBy" value="perkSolarBankFrameDyfed"/>
+		</item>
+
+		<item name="resourceSolarBankInverterDyfed">
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="SolarBankInverterDyfed"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="Tags" value="solarSkill"/>
+			<property name="Group" value="Resource"/>
+			<property name="SoundPickup" value="parts_grab"/>
+			<property name="SoundPlace" value="parts_place"/>
+			<property name="UnlockedBy" value="perkSolarBankInverterDyfed"/>
+		</item>
+
+		<item name="resourceSolarBankControlBoxDyfed">
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="SolarBankControlBoxDyfed"/>
+			<property name="Material" value="MelectricParts"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="Tags" value="solarSkill"/>
+			<property name="Group" value="Resource"/>
+			<property name="SoundPickup" value="parts_grab"/>
+			<property name="SoundPlace" value="parts_place"/>
+			<property name="UnlockedBy" value="perkSolarBankControlBoxDyfed"/>
+		</item>
+
+		<item name="resourceSolarBankCellMountDyfed">
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="SolarCellMountDyfed"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="Tags" value="solarSkill"/>
+			<property name="Group" value="Resource"/>
+			<property name="SoundPickup" value="parts_grab"/>
+			<property name="SoundPlace" value="parts_place"/>
+			<property name="UnlockedBy" value="perkSolarBankCellMountDyfed"/>
+		</item>
+
+		<item name="resourceSolarBankGlassDyfed">
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="SolarBankGlassDyfed"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="Tags" value="solarSkill"/>
+			<property name="Group" value="Resource"/>
+			<property name="SoundPickup" value="parts_grab"/>
+			<property name="SoundPlace" value="parts_place"/>
+			<property name="UnlockedBy" value="perkSolarBankGlassDyfed"/>
+		</item>
+
+		<!-- *** Renewable_Skill_Magazine -->
+		<item name="RenewableSkillMagazine">
+			<property name="Extends" value="masterSkillMagazine"/>
+			<property name="Tags" value="renewableDyfedCSM,csm"/> <!-- What is this? -->
+			<property name="CustomIcon" value="bookRenewableEnergyDyfed"/>
+			<property name="DescriptionKey" value="RenewableSkillMagazineDesc"/>
+			<property name="Unlocks" value="craftingRenewable"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRenewableDyfed" level="1"/> <!-- level="-1" sets a perk to max level -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRenewableDyfed" level="1">
+					<requirement name="HasBuff" buff="buffNerdOutfit"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$nerdOutfitSkillPointChance"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		
+		<!-- ***  SOLAR_BANK_VOLUME_01_FRAME -->
+		<item name="bookSolarBankFrameDyfed">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookSolarDyfed"/>
+			<property name="DescriptionKey" value="perkSolarBankFrameDyfedLongDesc"/>
+			<property name="Unlocks" value="perkSolarBankFrameDyfed"/>
+			<property name="Tags" value="solarProb"/>
+			<property name="Group" value="Books,BooksOnly,TCReading"/>	
+			
+			<effect_group tiered="false">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankFrameDyfed" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankFrameDyfed" level="-1"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCompleteDyfed" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- ***  SOLAR_BANK_VOLUME_02_INVERTER -->
+		<item name="bookSolarBankInverterDyfed">
+			<property name="Extends" value="bookSolarBankFrameDyfed"/>
+			<property name="DescriptionKey" value="perkSolarBankInverterDyfedLongDesc"/>
+			<property name="Unlocks" value="perkSolarBankInverterDyfed"/>
+			<effect_group tiered="false">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankInverterDyfed" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankInverterDyfed" level="-1"/>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCompleteDyfed" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			
+			<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- ***  SOLAR_BANK_VOLUME_03_CONTROLBOX -->
+		<item name="bookSolarBankControlBoxDyfed">
+			<property name="Extends" value="bookSolarBankFrameDyfed"/>
+			<property name="DescriptionKey" value="perkSolarBankControlBoxDyfedLongDesc"/>
+			<property name="Unlocks" value="perkSolarBankControlBoxDyfed"/>
+			<effect_group tiered="false">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankControlBoxDyfed" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankControlBoxDyfed" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCompleteDyfed" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- ***  SOLAR_BANK_VOLUME_04_CELLMOUNT -->
+		<item name="bookSolarBankCellMountDyfed">
+			<property name="Extends" value="bookSolarBankFrameDyfed"/>
+			<property name="DescriptionKey" value="perkSolarBankCellMountDyfedLongDesc"/>
+			<property name="Unlocks" value="perkSolarBankCellMountDyfed"/>
+
+			<effect_group tiered="false">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankCellMountDyfed" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCellMountDyfed" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCompleteDyfed" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- ***  SOLAR_BANK_VOLUME_05_GLASS -->
+		<item name="bookSolarBankGlassDyfed">
+			<property name="Extends" value="bookSolarBankFrameDyfed"/>
+			<property name="DescriptionKey" value="perkSolarBankGlassDyfedLongDesc"/>
+			<property name="Unlocks" value="perkSolarBankGlassDyfed"/>
+			<effect_group tiered="false">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankGlassDyfed" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankGlassDyfed" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSolarBankCompleteDyfed" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillRenewableEnergyDyfed" operation="GTE" value="5"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>		
+	</append>
+	
+	<append xpath="/items/item[@name='solarCell']">
+		<property name="UnlockedBy" value="craftingRenewableDyfed"/>
+	</append>
+	
+	<append xpath="/items/item[@name='questRewardT1BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">,bookSolarBankFrameDyfed,bookSolarBankInverterDyfed,bookSolarBankControlBoxDyfed,bookSolarBankCellMountDyfed,bookSolarBankGlassDyfed</append>
+	<append xpath="/items/item[@name='questRewardT2BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">,bookSolarBankFrameDyfed,bookSolarBankInverterDyfed,bookSolarBankControlBoxDyfed,bookSolarBankCellMountDyfed,bookSolarBankGlassDyfed</append>
+	<append xpath="/items/item[@name='questRewardT3BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">,bookSolarBankFrameDyfed,bookSolarBankInverterDyfed,bookSolarBankControlBoxDyfed,bookSolarBankCellMountDyfed,bookSolarBankGlassDyfed</append>
+	<append xpath="/items/item[@name='questRewardT4BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">,bookSolarBankFrameDyfed,bookSolarBankInverterDyfed,bookSolarBankControlBoxDyfed,bookSolarBankCellMountDyfed,bookSolarBankGlassDyfed</append>
+	<append xpath="/items/item[@name='questRewardT5BookBundle']/property[@class='Action0']/property[@name='Random_item']/@value">,bookSolarBankFrameDyfed,bookSolarBankInverterDyfed,bookSolarBankControlBoxDyfed,bookSolarBankCellMountDyfed,bookSolarBankGlassDyfed</append>
+
+	<append xpath="/items/item[@name='adminPerkBook']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter1Damage" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter2Maintenance" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter3Bleed" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter4KillMove" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter5RapidStrike" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter7QuickStrike" level="-1" show_message="false"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter8Complete" level="-1" show_message="false"/>
+	</append>
+
+	<append xpath="/items/item[@name='adminSkillMagazine']/effect_group">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRenewableDyfed" level="100" show_message="false"/>	
+	</append>
+	
+</configs>

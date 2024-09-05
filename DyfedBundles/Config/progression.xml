@@ -1,0 +1,6 @@
+<configs>
+
+	<!-- Add sand and clay bundles to Art of Mining 5 recipe unloacks -->
+	<append xpath="/progression/perks/book[@name='perkArtOfMiningPallets']/effect_group/passive_effect[@level='1']/@tags">,resourceCrushedSandBundleDyfed,resourceClayLumpBundleDyfed</append>
+	
+</configs>

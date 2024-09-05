@@ -411,8 +411,8 @@
 			<property name="Group" value="Basics,Building,advBuilding"/>
 			<property name="PickupJournalEntry" value="shapeMenuTip"/>
 		</block>
-
 	</append>
 	
+	<!-- set xpath="/blocks/block[@name='speaker']/property[@name='PlaySound']/@value">ZombieRadio</set-->	
 
 </configs>

@@ -14,7 +14,7 @@
 			<ingredient name="resourceMechanicalParts" count="38"/>
 			<ingredient name="resourceElectricParts" count="34"/>
 			<ingredient name="resourceScrapPolymers" count="80"/>
-			<ingredient name="carBattery" count="2"/>
+			<ingredient name="carBattery" count="1"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".50,.40,.30,.20,.10" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
 			</effect_group>
@@ -26,7 +26,7 @@
 			<ingredient name="resourceMechanicalParts" count="150"/>
 			<ingredient name="resourceElectricParts" count="120"/>
 			<ingredient name="resourceScrapPolymers" count="500"/>
-			<ingredient name="carBattery" count="1"/>
+			<ingredient name="carBattery" count="2"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".50,.40,.30,.20,.10" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
 			</effect_group>
