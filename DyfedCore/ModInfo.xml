@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="DyfedCore" />
+  <DisplayName value="Dyfed Collection - Core" />
+  <Description value="Contains dependent items for other Dyfed Mods.  It also contains base game config updates." />
+  <Author value="Ulfric" />
+  <Version value="1.0"/>
+  <Website value="" />
+</xml>

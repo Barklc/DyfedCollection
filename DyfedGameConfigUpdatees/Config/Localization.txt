@@ -1,3 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-resourceNutsBoltsDyfed,items,Items,,,Nuts and Bolts
-resourceNutsBoltsDyfedDesc,items,Items,,,"Used in the assembly of bigger components."

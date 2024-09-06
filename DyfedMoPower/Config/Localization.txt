@@ -1,10 +1,10 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 streetLight01Dyfed,blocks,Light,,,Working Street Light (Dyfed)
 streetLight01DyfedDesc,blocks,Light,,,"Use the wiring tool to connect a power source to this light and you should be able to turn it on.\n\nRepair with Forged Iron and Electrical Parts."
-midsizedGeneratorDyfed,blocks,blocks,,,MidSized Generator (Dyfed)
-midsizedGeneratorDyfedDesc,blocks,block,,,"A generator that 2x+ more powerful than a standard one."
-largeGeneratorDyfed,blocks,block,,,Large Generator (Dyfed)
-largeGeneratorDyfedDesc,blocks,block,,,"A generator that is 5x more powerful than any other generator in the game."
+midsizedGeneratorDyfed,blocks,Electricity,,,MidSized Generator (Dyfed)
+midsizedGeneratorDyfedDesc,blocks,Electricity,,,"A generator that 2x+ more powerful than a standard one."
+largeGeneratorDyfed,blocks,Electricity,,,Large Generator (Dyfed)
+largeGeneratorDyfedDesc,blocks,Electricity,,,"A generator that is 5x more powerful than any other generator in the game."
 electricianT5,progression,progression,,,"Bring on the Power, Bro!"
 tableLampLightDyfed,blocks,Light,,,Table Lamp (Dyfed)
 workLightDyfed,blocks,Light,,,Work Light (Dyfed)
@@ -27,3 +27,5 @@ wallLight01Dyfed,blocks,Light,,,Warehouse Outdoor Light (Dyfed)
 fluorescentLightDyfed,blocks,Light,,,Hanging Fluorescent Light (Dyfed)
 trackLightDyfed,blocks,Light,,,Track Light (Dyfed)
 chandelierLightDyfed,blocks,Light,,,Chandelier (Dyfed)
+powerSwitchButtonDyfed,blocks,Light,,,Push Button Power Switch (Dyfed)
+powerSwitchButtonDyfedDesc,blocks,Electricity,,,"Used to trigger electrical events when activated.\n\nRepair with Forged Iron."
