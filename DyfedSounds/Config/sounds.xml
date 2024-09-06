@@ -16,10 +16,10 @@
 	</append -->
 	
 	<append xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']">
-		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
-		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
-		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
-		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedSounds.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedSounds.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedSounds.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedSounds.unity3d?CreepyMicheal"/>
 	</append>
 	
 </configs>
