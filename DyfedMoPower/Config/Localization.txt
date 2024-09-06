@@ -28,4 +28,4 @@ fluorescentLightDyfed,blocks,Light,,,Hanging Fluorescent Light (Dyfed)
 trackLightDyfed,blocks,Light,,,Track Light (Dyfed)
 chandelierLightDyfed,blocks,Light,,,Chandelier (Dyfed)
 powerSwitchButtonDyfed,blocks,Light,,,Push Button Power Switch (Dyfed)
-powerSwitchButtonDyfed,blocks,Electricity,,,"Used to trigger electrical events when activated.\n\nRepair with Forged Iron."
+powerSwitchButtonDyfedDesc,blocks,Electricity,,,"Used to trigger electrical events when activated.\n\nRepair with Forged Iron."

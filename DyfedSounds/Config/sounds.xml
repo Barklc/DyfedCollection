@@ -1,0 +1,25 @@
+<configs>
+
+	<!--remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutalert']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutalert1']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutalert']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutalert2']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutalert']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutalert3']"/ -->
+	
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutroam1']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutroam2']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutroam3']"/>
+	<remove xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']/AudioClip[@ClipName='Sounds/Enemies/Scout_Zombie/zombiefemalescoutroam4']"/>
+	
+	<!-- append xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutalert]">
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+	</append -->
+	
+	<append xpath="/Sounds/SoundDataNode[@name='zombiefemalescoutroam']">
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+		<AudioClip ClipName="#@modfolder:Resources/DyfedCollection.unity3d?CreepyMicheal"/>
+	</append>
+	
+</configs>

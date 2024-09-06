@@ -1,3 +1,5 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 resourceNutsBoltsDyfed,items,Items,,,Nuts and Bolts
 resourceNutsBoltsDyfedDesc,items,Items,,,"Used in the assembly of bigger components."
+ironBarVariantHelperDyfed,blocks,Block,,,Iron Bars (Dyfed)
+ironBarVariantHelperDyfedDesc,blocks,Block,,,"Contains the three Iron Bar variants, offset, centered and corner."
