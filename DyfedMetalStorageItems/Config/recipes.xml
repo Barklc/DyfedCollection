@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<!-- Metal item for player storage (lockable) -->
+		<recipe name="metalBlockVariantHelperDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+		
+    </append>	
+
+</configs>

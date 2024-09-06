@@ -66,3 +66,7 @@ Added blocks/recipes/progression for working lights (SWorkingStuff Mod)
 	chandelierLightDyfed
 Increased craftingBlades (Knife Guy) max count from 75 to 100
 Added item/recipes/procression for meleeKatanaDyfed
+1.4
+Bug Fixed model placement, localization and removed workbench requirement
+Updated mid size generator's icon and added heat generation
+Added large Generator with heat generation

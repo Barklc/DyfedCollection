@@ -20,16 +20,16 @@
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@name_key='electricianT4']/unlock_entry/@item">,midsizedGeneratorDyfed</append>
 	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags">,midsizedGeneratorDyfed</append>
 	
-	<!-- Unlock largeGenerator in craftingElectriciian
-	<sppend xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
+	<!-- Unlock largeGenerator in craftingElectriciian	-->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']">
 		<display_entry icon="largeGeneratorDyfed" name_key="electricianT5" has_quality="false" unlock_level="100" >
 			<unlock_entry item="largeGeneratorDyfed" unlock_tier="1" />
 		</display_entry>
 	</append>
-	<sppend xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group>">
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group">
 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="largeGeneratorDyfed"/>
 	</append>
-	 -->
+
 	 
 	<!-- Unlock katana in creaftingBlades Skill -->
 	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/@max_level">100</set>

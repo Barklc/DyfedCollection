@@ -214,7 +214,7 @@
 			<property name="DescriptionKey" value="woodStorageblockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true"/>
-			<property name="PlaceAltBlockValue" value="cntWoodCrateDyfed,cntShippingCrateShamwayDyfed,cntShippingCrateLabEquipmentDyfed,cntShippingCrateBookstoreDyfed,cntShippingCrateCarPartsDyfed"/>
+			<property name="PlaceAltBlockValue" value="cntWoodCrateDyfed,cntShippingCrateShamwayDyfed,cntShippingCrateLabEquipmentDyfed,cntShippingCrateBookstoreDyfed,cntShippingCrateCarPartsDyfed,cntShippingCrateShotgunMessiahDyfed,cntShippingCrateWorkingStiffsDyfed,cntShippingCrateSavageCountryDyfed,cntShippingCrateMoPowerElectronicsDyfed"/>
 			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 		</block>
 		
@@ -486,6 +486,7 @@
 			<property name="Extends" value="cntWoodCrateDyfed"/>
 			<property name="CustomIcon" value="cntPillCaseClosed"/>
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 			<drop event="Destroy" name="resourceWood" count="5,10"/>
 			<property name="DowngradeBlock" value="cntPillCaseInsecureDyfed"/>
 		</block>
@@ -495,6 +496,7 @@
 			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
 			<property name="CustomIcon" value="cntPillCaseClosed"/>
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
 			<drop event="Destroy" name="resourceWood" count="5,10"/>
 			<property class="UpgradeBlock">
 				<property name="ToBlock" value="cntPillCaseDyfed"/>
@@ -564,6 +566,9 @@
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="electricTier2"/>
 			<property name="TakeDelay" value="15"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
 			<property class="RepairItems">
 				<property name="resourceForgedSteel" value="8"/>
 				<property name="resourceMechanicalParts" value="8"/>
@@ -584,12 +589,10 @@
 		</block>
 		
 		<!-- Large Generator -->
-		<!-- Update slots to largeMotor when item is added -->
-		<!-- Uncomment when large engines ara added
-		<block name="largeGeneratorDyfed">
+		<block name="largeGeneratorDyfed" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
 			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="Generator"/>
-			<property name="SlotItem" value="smallEngine"/>
+			<property name="SlotItem" value="decoCarMotorFlat"/>
 			<property name="MaxFuel" value="20000"/>
 			<property name="MaxPower" value="45250"/>
 			<property name="OutputPerFuel" value="11250"/>
@@ -612,6 +615,9 @@
 			<property name="EconomicValue" value="2000"/>
 			<property name="TraderStageTemplate" value="electricTier3"/>
 			<property name="TakeDelay" value="15"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
 			<property class="RepairItems">
 				<property name="resourceForgedSteel" value="8"/>
 				<property name="resourceMechanicalParts" value="8"/>
@@ -1086,6 +1092,83 @@
 			<property name="PlaceAltBlockValue" value="tableLampLightDyfed,workLightDyfed,signExitLightDyfed,ceilingFanLightDyfed,signShopOpenDyfed,deskLampLightDyfed,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player,sconce1LightShadowDyfed,porchLight01Dyfed,porchLight04BrassDyfed,ceilingLight02Dyfed,ceilingLight02BrassDyfed,ceilingLight04Dyfed,ceilingLight05Dyfed,ceilingLight05BrassDyfed,recessedLightDyfed,wallLight01Dyfed,fluorescentLightDyfed,trackLightDyfed,chandelierLightDyfed,signNeonColdBeerDyfed"/>
 			<property name="Group" value="Basics,Building,advBuilding"/>
 			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+		</block>
+		
+		<!-- *** IRON_BARS -->
+		<block name="ironBarsCenteredDyfed">
+			<property name="DescriptionKey" value="ironBarsDesc"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="CustomIcon" value="ironBarsCentered"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="iron_bars_centered"/>
+			<property name="Texture" value="446"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="ImposterExcludeAndStop" value="true"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+			<property name="EconomicValue" value="10"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="concreteShapes:barsCentered"/>
+				<property name="Item" value="resourceConcreteMix"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="32" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="SortOrder1" value="B358"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_windows"/>
+		</block>
+
+		<block name="ironBarsDyfed">
+			<property name="Extends" value="ironBarsCenteredDyfed"/>
+			<property name="CustomIcon" value="ironBarsCentered"/>
+			<property name="Model" value="iron_bars"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="concreteShapes:bars"/>
+				<property name="Item" value="resourceConcreteMix"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="ironBarsCNRDyfed">
+			<property name="Extends" value="ironBarsCenteredDyfed"/>
+			<property name="Model" value="iron_bars_corner"/>
+			<property name="CustomIcon" value="ironBarsCNR"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="concreteShapes:barsCorner"/>
+				<property name="Item" value="resourceConcreteMix"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+						
+		<block name="ironBarVariantHelperDyfed">
+			<property name="Extends" value="ironBarsCenteredDyfed"/>
+			<property name="CustomIcon" value="ironBarsCentered"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="ironBarVariantHelperDyfedDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="ironBarsCenteredDyfed,ironBarsDyfed,ironBarsCNRDyfed"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="SortOrder1" value="B358"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_windows"/>
 		</block>
 	</append>
 	

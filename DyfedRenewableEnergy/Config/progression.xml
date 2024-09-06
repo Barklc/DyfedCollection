@@ -1,0 +1,87 @@
+<configs>
+	<append xpath="/progression/crafting_skills">
+
+		<!-- *** RENEWABLE_ENERGY_SKILLS -->
+		<crafting_skill name="craftingRenewableDyfed" max_level="100" parent="attCrafting" name_key="craftingRenewableDyfedName" desc_key="craftingRenewableDyfedDesc" long_desc_key="craftingRenewableDyfedLongDesc" icon="ui_game_symbol_explosion">
+			<display_entry item="solarCell" unlock_level="50,60,70,80,90,100"/>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="solarCell"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="60,70,80,90,100" value="1,2,3,4,5" tags="solarCell"/>
+			</effect_group>
+		</crafting_skill>
+	</append>
+	
+	<insertAfter xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='LootProb' and @tags='repairToolsCSM' and @value='2,10']">
+			
+			
+			<!-- Increase the chance to find solarbank parts with each perk rank -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="solarSkill"/>
+			
+			<!-- Increase the chance to find Renewable Energy crafting skill magazines with each perk rank up to crafting skill 100 -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="renewableDyfedCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingRenewableDyfed" operation="LT" value="100"/>
+			</passive_effect>
+			
+			<!-- Once renewable energy skill reaches 100, set the probability bonus of finding renewable energy skill magazines to 0 -->
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="renewableDyfedCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingRenewableDyfed" operation="Equals" value="100"/>
+			</passive_effect>
+			
+			<!-- Increase the chance to find solar books until each book is read -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="solorProb">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankCompleteDyfed" operation="LT" value="1"/>
+			</passive_effect>
+
+			<!-- When all Sniper books have been read, set the probability bonus of finding them to 0 -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="1,1" tags="solarProb">
+				<requirement name="ProgressionLevel" progression_name="perkSolarBankCompleteDyfed" operation="Equals" value="1"/>
+			</passive_effect>
+			
+	</insertAfter>
+	
+	<append xpath="/progression/skills">
+		<book_group name="skillRenewableEnergyDyfed" parent="attBooks" name_key="perkSolarBankDyfed0Name" desc_key="perkSolarBankDyfed0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_explosion">
+			<effect_group/>
+		</book_group>
+	</append>
+
+	<append xpath="/progression/perks" >
+		<!-- *** SOLAR_BANK_VOLUME_01_FRAME -->
+		<book name="perkSolarBankFrameDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="bookSolarBankFrameDyfed" desc_key="perkSolarBankFrameDyfedDesc" long_desc_key="perkSolarBankFrameDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceSolarBankFrameDyfed"/>
+			</effect_group>
+		</book>
+		<!-- *** SOLAR_BANK_VOLUME_02_INVERTER -->
+		<book name="perkSolarBankInverterDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="bookSolarBankInverterDyfed" desc_key="perkSolarBankInverterDyfedDesc" long_desc_key="perkSolarInverterFrameDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceSolarBankInverterDyfed"/>
+			</effect_group>
+		</book>
+		<!-- *** SOLAR_BANK_VOLUME_03_CONTROLBOX -->
+		<book name="perkSolarBankControlBoxDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="bookSolarBankControlBoxDyfed" desc_key="perkSolarBankControlBoxDyfedDesc" long_desc_key="perkSolarBankControlBoxDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceSolarBankControlBoxDyfed"/>
+			</effect_group>
+		</book>
+		<!-- *** SOLAR_BANK_VOLUME_04_CELLMOUNT -->
+		<book name="perkSolarBankCellMountDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="bookSolarBankCellMountDyfed" desc_key="perkSolarBankCellMountDyfedDesc" long_desc_key="perkSolarBankCellMountDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceSolarBankCellMountDyfed"/>
+			</effect_group>
+		</book>
+		<!-- *** SOLAR_BANK_VOLUME_05_GLASS -->
+		<book name="perkSolarBankGlassDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="bookSolarBankGlassDyfed" desc_key="perkSolarBankGlassDyfedDesc" long_desc_key="perkSolarBankGlassDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceSolarBankGlassDyfed"/>
+			</effect_group>
+		</book>
+		<!-- *** 5/5 SOLAR_BANK_COMPLETE -->
+		<book name="perkSolarBankCompleteDyfed" parent="skillRenewableEnergyDyfed" max_level="1" base_skill_point_cost="0" name_key="perkSolarBankCompleteDyfedName" desc_key="perkSolarBankCompleteDyfedDesc" long_desc_key="perkSolarBankCompleteDyfedLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="solarbank"/>
+			</effect_group>
+		</book>
+	</append>
+
+</configs>

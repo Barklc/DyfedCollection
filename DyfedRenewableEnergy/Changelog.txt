@@ -1,0 +1,16 @@
+1.0
+Depends on DyfedCollection Mod
+Added Renewable Energy Magazine skill books for crafting solar cells if better quality
+Added Solar Bank books Vol1-5
+Added workbench recipe for resourceSolarBankFrameDyfed which unlocks with Solar Bank Vol 1
+Added workbench recipe for resourceSolarBankInverterDyfed which unlocks with Solar Bank Vol 2
+Added workbench recipe for resourceSolarBankControlBoxDyfed which unlocks with Solar Bank Vol 3
+Added workbench recipe for resourceSolarBankCellMountDyfed which unlocks with Solar Bank Vol 4
+Added workbench recipe for resourceSolarBankGlassDyfed which unlocks with Solar Bank Vol 5
+Added workbench recipe for solarbanks, using above recipes, which unlocks when Solar Bank book collection is complete
+Added workbench recipe for solarcells which unlocks at Renewable Energy skill at 50 with quality increases every addition 10
+Added frame, inverter, control book, cell mount, and glass cover to looting tables containing electric parts
+Added Solar Bank books to looting tables
+Added Renewable Energy Magazine to looting tables
+1.1
+Bug fix: Add Renewable Magazines to all the lootgroups that contain electricianSkillMagazine

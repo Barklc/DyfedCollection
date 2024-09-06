@@ -1,0 +1,307 @@
+<configs>		
+	<append xpath="/blocks">
+
+		<!-- Wood itmes for player storage (lockable) -->
+		<block name="woodStorageBlockVariantHelperDyfed">
+			<property name="Extends" value="cntIceMachine"/>
+			<property name="CustomIcon" value="cntStorageCrateDyfed"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="woodStorageblockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="cntWoodCrateDyfed,cntShippingCrateShamwayDyfed,cntShippingCrateLabEquipmentDyfed,cntShippingCrateBookstoreDyfed,cntShippingCrateCarPartsDyfed,cntShippingCrateShotgunMessiahDyfed,cntShippingCrateWorkingStiffsDyfed,cntShippingCrateSavageCountryDyfed,cntShippingCrateMoPowerElectronicsDyfed"/>
+			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
+		</block>
+		
+		<!-- Basic wooden create storage lockable-->
+		<block name="cntWoodCrateDyfed">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="CompositeTileEntity"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="playerWoodStorageDyfed"/>
+				</property>
+				<property class="TEFeatureLockable"/>
+			</property>
+			<property name="CustomIcon" value="cntStorageCrateDyfed"/>
+			<property name="DescriptionKey" value="cntWoodCrateDyfedDesc"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="FuelValue" value="300"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="MaxDamage" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="DowngradeBlock" value="cntWoodCrateInsecureDyfed"/>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<property name="SortOrder1" value="B106"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<!-- Basic wooden create storage unlocked -->
+		<block name="cntWoodCrateInsecureDyfed">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="CompositeTileEntity"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="playerWoodStorageDyfed"/>
+				</property>
+			</property>
+			<property name="CustomIcon" value="cntStorageCrateDyfed"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="500"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntWoodCrateDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="SortOrder1" value="B106"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<!-- Shamway crate for player lockable -->
+		<block name="cntShippingCrateShamwayDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="DescriptionKey" value="cntShippingCrateShamwayDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateShamwayPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateShamwayInsecureDyfed"/>
+		</block>
+		
+		<!-- Shamway crate for player unlockable -->
+		<block name="cntShippingCrateShamwayInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateShamway"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateShamwayPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateShamwayDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+		<!-- Pop N Pills crate for player lockable -->
+		<block name="cntShippingCrateLabEquipmentDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+			<property name="DescriptionKey" value="cntShippingCrateLabEquipmentDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePopnPillsPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateLabEquipmentInsecureDyfed"/>
+		</block>
+		
+		<!-- Pop N Pills crate for player unlockable -->
+		<block name="cntShippingCrateLabEquipmentInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateLabEquipment"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePopnPillsPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateLabEquipmentDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+		<!-- Crack-A-Book crate for player lockable -->
+		<block name="cntShippingCrateBookstoreDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateBookstore"/>
+			<property name="DescriptionKey" value="cntShippingCrateBookstoreDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateCrackaBookPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateBookstoreInsecureDyfed"/>
+		</block>
+		
+		<!-- Crack-A-Book crate for player unlockable -->
+		<block name="cntShippingCrateBookstoreInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateBookstore"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateCrackaBookPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateBookstoreDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+		<!-- Pass-n-Gas crate for player lockable -->
+		<block name="cntShippingCrateCarPartsDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateCarParts"/>
+			<property name="DescriptionKey" value="cntShippingCrateCarPartsDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePassnGasPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateCarPartsInsecureDyfed"/>
+		</block>
+		
+		<!-- Pass-n-Gas crate for player unlockable -->
+		<block name="cntShippingCrateCarPartsInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateCarParts"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCratePassnGasPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateCarPartsDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+		<!-- Shotgun Messiah crate for player lockable -->
+		<block name="cntShippingCrateShotgunMessiahDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+			<property name="DescriptionKey" value="cntShippingCrateShotgunMessiahDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateShotgunPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateShotgunMessiahInsecureDyfed"/>
+		</block>
+		
+		<!-- Shotgun Messiah crate for player unlockable -->
+		<block name="cntShippingCrateShotgunMessiahInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateShotgunMessiah"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateShotgunPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateShotgunMessiahDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>		
+		
+		<!-- Working Stiffs crate for player lockable -->
+		<block name="cntShippingCrateWorkingStiffsDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+			<property name="DescriptionKey" value="cntShippingCrateWorkingStiffsDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateWorkingStiffPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateWorkingStiffsInsecureDyfed"/>
+		</block>
+		
+		<!-- Working Stiffs crate for player unlockable -->
+		<block name="cntShippingCrateWorkingStiffsInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateWorkingStiffs"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateWorkingStiffPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateWorkingStiffsDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>			
+		
+		<!-- Savage Country crate for player lockable -->
+		<block name="cntShippingCrateSavageCountryDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+			<property name="DescriptionKey" value="cntShippingCrateSavageCountryDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateSavagePrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateSavageCountryInsecureDyfed"/>
+		</block>
+		
+		<!-- cntShippingCrateSavageCountry crate for player unlockable -->
+		<block name="cntShippingCrateSavageCountryInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateSavageCountry"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateSavagePrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateSavageCountryDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>			
+		
+		<!-- Mo Power Electronics crate for player lockable -->
+		<block name="cntShippingCrateMoPowerElectronicsDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+			<property name="DescriptionKey" value="cntShippingCrateMoPowerElectronicsDyfedDesc"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateMoPowerPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntShippingCrateMoPowerElectronicsInsecureDyfed"/>
+		</block>
+		
+		<!-- Mo Power Electronics crate for player unlockable -->
+		<block name="cntShippingCrateMoPowerElectronicsInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntShippingCrateMoPowerElectronics"/>
+			<property name="Model" value="@:Entities/LootContainers/shippingCrateMoPowerPrefab.prefab"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntShippingCrateMoPowerElectronics"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+				<!-- Pill case for player lockable -->
+		<block name="cntPillCaseDyfed">
+			<property name="Extends" value="cntWoodCrateDyfed"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property name="DowngradeBlock" value="cntPillCaseInsecureDyfed"/>
+		</block>
+		
+		<!-- Pill case for player unlockable -->
+		<block name="cntPillCaseInsecureDyfed">
+			<property name="Extends" value="cntWoodCrateInsecureDyfed"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<drop event="Destroy" name="resourceWood" count="5,10"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="cntPillCaseDyfed"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+	</append>
+	
+
+</configs>

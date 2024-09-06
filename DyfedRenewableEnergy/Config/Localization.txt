@@ -1,0 +1,37 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+resourceSolarBankFrameDyfed,items,Items,,,Solar Bank Frame
+resourceSolarBankFrameDyfedDesc,items,Items,,,"This is the base frame for a solar bank."
+resourceSolarBankInverterDyfed,items,Items,,,Solar Bank Inverter
+resourceSolarBankInverterDyfedDesc,items,Items,,,"This is the inverter for a solar bank."
+resourceSolarBankControlBoxDyfed,items,Items,,,Solar Bank Control Box
+resourceSolarBankControlBoxDyfedDesc,items,Items,,,"This is the control box for a solar bank."
+resourceSolarBankCellMountDyfed,items,Items,,,Solar Bank Solar Cell Mount
+resourceSolarBankCellMountDyfedDesc,items,Items,,,"This is the mount that holds the solar cells in the solar bank."
+resourceSolarBankGlassDyfed,items,Items,,,Solar Bank Cover
+resourceSolarBankGlassDyfedDesc,items,Items,,,"This is the glass cover for the solar bank."
+craftingRenewableDyfed,items,Tools,,,Renewable Energy Magazine
+craftingRenewableDyfedDesc,items,Tools,,,"Learn to craft your own solar cells!\n\nImproves solar cell crafting skill."
+craftingRenewableDyfedName,progression,Attribute,,,Renewable Energy Items
+craftingRenewableDyfedLongDesc,progression,Attribute,,x,CURRENTLY NOT USED
+perkSolarBankDyfed0Name,progression,perk  book,,,Solar Banks
+perkSolarBankDyfed0Desc,progression,perk  book,,,"The books talks about the construction the the frame of a solar bank."
+bookSolarBankFrameDyfed,items,perk  book,,,Solar Banks Vol 1
+perkSolarBankFrameDyfedDesc,progression,perk  book,,,"You can craft solar bank frames."
+perkSolarBankFrameDyfedLongDesc,progression,perk  book,,,"Solar Bank Frame is the base unit for making a solar bank."
+bookSolarBankInverterDyfed,items,perk  book,,,Solar Banks Vol 2
+perkSolarBankInverterDyfedDesc,progression,perk  book,,,"You can craft solar bank inverter."
+perkSolarBankInverterDyfedLongDesc,progression,perk  book,,,"Solar Bank inverter convertss the DC from the Panels to AC for usage by devices."
+bookSolarBankControlBoxDyfed,items,perk  book,,,Solar Banks Vol 3
+perkSolarBankControlBoxDyfedDesc,progression,perk  book,,,"You can craft solar bank control box."
+perkSolarBankControlBoxDyfedLongDesc,progression,perk  book,,,"Solar Bank Control Box controls the angle of the panels to the sun."
+bookSolarBankCellMountDyfed,items,perk  book,,,Solar Banks Vol 4
+perkSolarBankCellMountDyfedDesc,progression,perk  book,,,"You can craft solar bank cell mount."
+perkSolarBankCellMountDyfedLongDesc,progression,perk  book,,,"Solar Bank Cell Mount is the panel that the solar cells mount."
+bookSolarBankGlassDyfed,items,perk  book,,,Solar Banks Vol 5
+perkSolarBankGlassDyfedDesc,progression,perk  book,,,"You can craft solar bank glass cover."
+perkSolarBankGlassDyfedLongDesc,progression,perk  book,,,"Solar Bank Glass Cover it the cell mount to protect it."
+perkSolarBankCompleteDyfedName,progression,perk  book,,,Solar Banks - Completion
+perkSolarBankCompleteDyfedDesc,progression,perk  book,,,"Full Solar Banks can be crafted."
+perkSolarBankCompleteDyfedLongDesc,progression,perk  book,,,"With the complete collection all the pieces need to craft a solar bank can be created."
+RenewableSkillMagazine,Item,item,,,Renewable Energy Magazine
+RenewableSkillMagazineDesc,Item,item,,,"Learn to craft your own solar cells!\n\nImproves solar cell crafting skill."

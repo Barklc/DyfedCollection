@@ -1,0 +1,33 @@
+<configs>
+	<append xpath="/recipes">
+		
+		<!-- Add Working Ovens and Grills -->
+		
+		<recipe name="cntWallOvenWorkingDyfed" count="1" craft_time="45" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntStoveWorkingDyfed" count="1" craft_time="45" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="resourceMetalPipe" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntGasGrillWorkingDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedIron" count="40"/>
+			<ingredient name="toolCookingGrill" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+
+		<recipe name="cntCharcoalGrillWorkingDyfed" craft_time="30" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="toolCookingPot" count="1"/>
+			<ingredient name="toolCookingGrill" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+		
+    </append>	
+
+</configs>

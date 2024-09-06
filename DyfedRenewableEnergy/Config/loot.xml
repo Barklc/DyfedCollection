@@ -1,0 +1,60 @@
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='groupCraftingRare']">
+		<item name="resourceSolarBankFrameDyfed" count="1"/>
+		<item name="resourceSolarBankInverterDyfed" count="1"/>
+		<item name="resourceSolarBankControlBoxDyfed" count="1"/>
+		<item name="resourceSolarBankCellMountDyfed" count="1"/>
+		<item name="resourceSolarBankGlassDyfed" count="1"/>
+
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='perkBooks']">
+		<item name="bookSolarBankFrameDyfed"/>
+		<item name="bookSolarBankInverterDyfed"/>
+		<item name="bookSolarBankControlBoxDyfed"/>
+		<item name="bookSolarBankCellMountDyfed"/>
+		<item name="bookSolarBankGlassDyfed"/>
+	</append>
+	
+
+	<append xpath="/lootcontainers/lootgroup/item[@name='electricianSkillMagazine']">
+		<item name="electricianSkillMagazine"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup/item[@name='electricianSkillMagazine' and @count='2']">
+		<item name="RenewableSkillMagazine" count="2"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup/item[@name='electricianSkillMagazine' and @loot_prob_template='high']">
+		 <item name="RenewableSkillMagazine" loot_prob_template="high"/>
+	</append>
+	
+	<!-- *** Electrical_Devices -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupElectricalDevices']">
+		<item name="resourceSolarBankFrameDyfed" count="1" loot_prob_template="high"/>
+		<item name="resourceSolarBankInverterDyfed" count="1" loot_prob_template="high"/>
+		<item name="resourceSolarBankControlBoxDyfed" count="1" loot_prob_template="high"/>
+		<item name="resourceSolarBankCellMountDyfed" count="1" loot_prob_template="high"/>
+		<item name="resourceSolarBankGlassDyfed" count="1" loot_prob_template="high"/>
+	</append>
+
+	<!-- *** Workbench_Loot -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot02']">
+		<item name="resourceSolarBankFrameDyfed" count="1"/>
+		<item name="resourceSolarBankInverterDyfed" count="1"/>
+		<item name="resourceSolarBankControlBoxDyfed" count="1"/>
+		<item name="resourceSolarBankCellMountDyfed" count="1"/>
+		<item name="resourceSolarBankGlassDyfed" count="1"/>
+	</append>	
+	
+	<!-- *** Twitch_Resources -->
+	<append xpath="/lootcontainers/lootgroup[@name='twitch_craftresources2']">
+		<item name="resourceSolarBankFrameDyfed" count="1"/>
+		<item name="resourceSolarBankInverterDyfed" count="1"/>
+		<item name="resourceSolarBankControlBoxDyfed" count="1"/>
+		<item name="resourceSolarBankCellMountDyfed" count="1"/>
+		<item name="resourceSolarBankGlassDyfed" count="1"/>
+	</append>	
+
+</configs>
+

@@ -79,13 +79,13 @@
 		</recipe>
 		
 		<!-- Metal item for player storage (lockable) -->
-		<recipe name="metalBlockVariantHelperDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="metalBlockVariantHelperDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 		
 		<!-- Wood item for player storage (lockable) -->
-		<recipe name="woodStorageBlockVariantHelperDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="woodStorageBlockVariantHelperDyfed" count="1" craft_time="30">
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
@@ -97,13 +97,13 @@
 		</recipe>
 	
 		<!-- Fridge Stainless Steel storage (lockable) -->
-		<recipe name="cntFridgeStainlessSteelDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="cntFridgeStainlessSteelDyfed" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="10"/>
 			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 		
 		<!-- Pill Case storage (lockable) -->
-		<recipe name="cntPillCaseDyfed" count="1" craft_time="60" craft_area="workbench" tags="workbenchCrafting">
+		<recipe name="cntPillCaseDyfed" count="1" craft_time="30" >
 			<ingredient name="resourceWood" count="10"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
@@ -115,7 +115,8 @@
 			<ingredient name="resourceNutsBoltsDyfed" count="10"/>
 		</recipe>
 		
-		<recipe name="midsizedGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+		<!-- Mid-sized Generator -->		
+		<recipe name="midsizedGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="180"/>
 			<ingredient name="resourceMechanicalParts" count="38"/>
 			<ingredient name="resourceElectricParts" count="34"/>
@@ -126,22 +127,25 @@
 			</effect_group>
 		</recipe>
 		
-		<!-- Uncomment when large motors are added
-		<recipe name="largeGeneratorDyfed" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable">
+		<!-- Large Generator and decoCarMotorFlipped to decoCarMotorPlat -->
+		<recipe name="largeGeneratorDyfed" count="1" craft_area="workbench" tags="workbenchCrafting, learnable">
 			<ingredient name="resourceForgedSteel" count="600"/>
 			<ingredient name="resourceMechanicalParts" count="150"/>
 			<ingredient name="resourceElectricParts" count="120"/>
 			<ingredient name="resourceScrapPolymers" count="500"/>
-			<ingredient name="carBattery" count="10"/>
+			<ingredient name="carBattery" count="1"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".50,.40,.30,.20,.10" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
 			</effect_group>
 		</recipe>
-		-->
+		
+		<recipe name="decoCarMotorFlat" count="1" craft_area="workbench">
+			<ingredient name="decoCarMotorFlipped" count="1"/>
+		</recipe>
 		
 		<!-- Add Working Ovens and Grills -->
 		
-		<recipe name="cntWallOvenWorkingDyfed" count="1" craft_time="45" craft_area="workbench" tags="workbenchCrafting,learnable">
+		<recipe name="cntWallOvenWorkingDyfed" count="1" craft_time="45" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceForgedIron" count="40"/>
 			<ingredient name="resourceMetalPipe" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
@@ -178,16 +182,27 @@
 			</effect_group>			
 		</recipe>
 		
-		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" tags="perkDeepCuts">
+		<!-- Add Katana melee weapon -->
+		<recipe name="meleeKatanaT3Dyfed" count="1" craft_time = "60" tags="perkDeepCuts, learnable, workbenchCrafting">
 			<ingredient name="resourceForgedSteel" count="20"/>
 			<ingredient name="resourceScrapPolymers" count="50"/>
 			<ingredient name="resourceOil" count="5"/>
 		</recipe>
+		
+		<!--Add Helper for Iron Bars, Iron Bars Centered, and Iron Bars Corner -->
+		<recipe name="ironBarVariantHelperDyfed" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="100"/>
+			<ingredient name="unit_clay" count="20"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
 
     </append>	
 	
+	<!-- Sand Bundle creation -->
     <insertBefore xpath="/recipes/recipe[@name='ammo9mmBulletBall']">	
-		<!-- Sand Bundle creation -->
+
 		<recipe name="resourceCrushedSandBundleDyfed" count="1" craft_time="10" tags="learnable">
 			<ingredient name="resourceCrushedSand" count="6000"/>
 		</recipe>
