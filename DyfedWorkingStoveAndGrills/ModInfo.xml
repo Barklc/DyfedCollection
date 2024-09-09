@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-  <Name value="DyfedCollection" />
-  <DisplayName value="Dyfed Collection" />
-  <Description value="Changes made for the Dyfed server." />
+  <Name value="DyfedWorkingStoveAndGrills" />
+  <DisplayName value="Dyfed Collection - Working Stove And Grills" />
+  <Description value="Craftable stove, oven, charcoal grill, and gas grill can cook food like a campfire." />
   <Author value="Many" />
   <Version value="1.4"/>
   <Website value="" />

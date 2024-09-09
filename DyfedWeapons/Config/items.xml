@@ -57,7 +57,7 @@
 					<property name="Override0" value="organic" param1="metalgrazeorganic"/>
 				</property>
 			</property>
-			<effect_group name="meleeKatanaT3Dyfed">
+			<effect_group name="meleeWpnBladeT3Machete">
 				<passive_effect name="EntityDamage" operation="base_set" value="30.5" tags="perkDeepCuts"/>
 				<passive_effect name="BlockDamage" operation="base_set" value="30" tags="perkDeepCuts"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfAgility"/>

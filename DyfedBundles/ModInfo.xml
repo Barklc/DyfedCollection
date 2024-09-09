@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-  <Name value="DyfedBulletBundle" />
-  <DisplayName value="Dyfed Collection - Bullet Bundle" />
-  <Description value="Allows you rebundle loose bullets." />
+  <Name value="DyfedBundles" />
+  <DisplayName value="Dyfed Collection - Bundles" />
+  <Description value="Allows you rebundle loose bullets, clay and sand." />
   <Author value="Many" />
   <Version value="1.0"/>
   <Website value="" />
