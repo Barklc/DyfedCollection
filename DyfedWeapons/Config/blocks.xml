@@ -1,0 +1,3 @@
+<configs>
+	<include filename="Ranged/PropaneTank/PropaneTank_blocks.xml"/>
+</configs>

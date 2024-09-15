@@ -1,0 +1,15 @@
+<configs>
+	<append xpath="/ui_display_info">
+		
+											<!-- Stun Rocket Launcher Ammo -->		
+											
+		<item_display_info display_type="ammoRocketStunDyfed" display_group="groupAmmo">
+			<display_entry name="dExEntityDamage" title_key="statEntityDamageExplosion" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="dExBlockDamage" title_key="statBlockDamageExplosion" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="dExRadius" title_key="statExRadius" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="EntityDamage" title_key="statEntityDamageRangedImpact" tags="admin"/>
+			<display_entry name="BlockDamage" title_key="statBlockDamageRangedImpact" tags="admin"/>
+			<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+		</item_display_info>
+	</append>
+</configs>

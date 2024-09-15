@@ -1,0 +1,8 @@
+<configs>
+		
+											<!-- Stun Rocket Launcher Ammo -->		
+												 
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/display_entry[@name_key='explosivesT5']/unlock_entry/@item">,ammoRocketStunDyfed</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingExplosives']/effect_group/passive_effect[@level='100,100']/@tags">,ammoRocketStunDyfed</append>
+	
+</configs>

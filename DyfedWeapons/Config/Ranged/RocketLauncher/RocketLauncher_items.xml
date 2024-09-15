@@ -1,0 +1,53 @@
+<configs>
+	<append xpath="/items">
+		
+											<!-- Stun Rocket Launcher Ammo -->	
+											
+		<item name="ammoRocketStunDyfed">
+			<property name="Tags" value="ammo,perkDemolitionsExpert"/>
+			<property name="DisplayType" value="ammoRocketStunDyfed"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/RocketLauncher/rocketPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="ammoRocketStunDyfed"/>
+			<property name="DescriptionKey" value="ammoRocketStunDyfedDesc"/>
+			<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mlead_scrap"/>
+			<property name="Stacknumber" value="20"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="TraderStageTemplate" value="ammoTier2"/>
+			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+			<property name="UnlockedBy" value="craftingExplosives"/>
+			
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.BlockDamage" value="100"/>
+				<property name="Explosion.EntityDamage" value="250"/>
+				<property name="Explosion.ParticleIndex" value="13"/>
+				<property name="Explosion.Duration" value="1"/>
+				<property name="Explosion.RadiusBlocks" value="5"/>
+				<property name="Explosion.RadiusEntities" value="4"/>
+				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property name="Gravity" value="-3"/>
+				<property name="FlyTime" value=".8"/>
+				<property name="LifeTime" value="7"/>
+				<property name="DeadTime" value="4"/>
+			</property>
+			
+			<effect_group name="ammoRocketStunDyfed" tiered="false">
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffInjuryGStunned"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="5" force="20"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="100"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="20"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="30" tags="perkDemolitionsExpert"/>
+				<display_value name="dExRadius" value="5"/>
+				<display_value name="dExBlockDamage" value="100"/>
+				<display_value name="dExEntityDamage" value="250"/>
+				<display_value name="dStunDuration" value="5"/>
+			</effect_group>
+		</item>
+	</append>
+	
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoRocketStunDyfed</append>
+	
+</configs>

@@ -1,14 +1,7 @@
 <configs>
-	 
-	<!-- Unlock katana in creaftingBlades Skill -->
-	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/@max_level">100</set>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
-		<display_entry item="meleeKatanaT3Dyfed" unlock_level="75,80,85,90,95,100" />
-	</append>
-	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group">
-		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="meleeKatanaT3Dyfed"/>
-		<passive_effect name="CraftingTier" operation="base_add" level="80,85,90,95,100" value="1,2,3,4,5" tags="meleeKatanaT3Dyfed"/>
-	</append>			
-		
-
+	<include filename="Ranged/Grenades/StunGrenade_progression.xml"/>
+	<!--include filename="Ranged/ShockGrenade/ShockGrenade_progression.xml"/-->
+	<include filename="Ranged/RocketLauncher/RocketLauncher_progression.xml"/>	 
+	<include filename="Melee/Katana/Katana_progression.xml"/>	 
+	<include filename="Melee/Sword/Sword_progression.xml"/>
 </configs>
