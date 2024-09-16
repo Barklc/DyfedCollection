@@ -1,0 +1,5 @@
+<configs>
+	<include filename="Ranged/StunGrenade/StunGrenade_ui_display.xml"/>
+	<include filename="Ranged/ShockGrenade/ShockGrenade_ui_display.xml"/>
+	<include filename="Ranged/RocketLauncher/RocketLauncher_ui_display.xml"/>	
+</configs>

@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+meleeKatanaDyfed,items,melee,,,Katana (Dyfed)
+meleeKatanaDyfedDesc,items,melee,,,"Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts."
+meleeKatanaT3Dyfed,items,melee,,,Katana (Dyfed)
+meleeKatanaT3DyfedDesc,items,melee,,,"Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts."
+thrownStunGrenadeDyfed,items,Gun,,,Stun Grenade (Dyfed)
+thrownStunGrenadeDyfedDesc,items,Gun,,,"This grenade stuns entities with blast range knocking them to the ground."
+thrownShockGrenadeDyfed,items,Gun,,,Shock Grenade (Dyfed)
+thrownShockGrenadeDyfedDesc,items,Gun,,,"This grenade releases a strong electrical shock to entities within blast range."
+ammoRocketStunDyfed,items,Ammo,,,Stun Rocket (Dyfed)
+ammoRocketStunDyfedDesc,items,Ammo,,,"This rocket stuns entities within blast range but does little block damage."
+meleeSwordDyfed,items,melee,,,Sword (Dyfed)
+meleeSwordDyfedDesc,items,melee,,,"Sword made of hard steel that does more armor penetration. Improve penetration by putting points in perkPenetration."

@@ -1,0 +1,3 @@
+<config>
+	<include filename="Ranged/StunGrenade/StunGrenade_sounds.xml"/>
+</config>

@@ -1,0 +1,68 @@
+<configs>
+	<append xpath="/items">
+		
+													<!-- Stun Grenade -->		
+													
+		<item name="thrownStunGrenadeDyfed">
+			<property name="Extends" value="thrownGrenadeContact"/>
+			<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+			<property name="ItemTypeIcon" value="explosion"/>
+			<property name="CustomIcon" value="thrownGrenadeContact"/>
+			<property name="CustomIconTint" value="aa00cc"/>
+			<property name="TintColor" value="170,0,204"/>
+			<property name="DescriptionKey" value="thrownStunGrenadeDyfedDesc"/>
+			<property name="DisplayType" value="ammoStunGrenade"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="HoldType" value="57"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+			<property name="DropScale" value="2.5"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicValue" value="200"/>
+			<property name="Weight" value="0"/>
+			<property name="Explosion.AudioName" value="stun_explosion"/>
+			<property name="Explosion.Duration" value="1"/>
+			<property name="Explosion.ParticleIndex" value="13"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.BlastPower" value="2"/>
+			<property name="FuseTime" value="3"/>
+			<property name="FusePrimeOnActivate" value="true"/>
+			<property name="ExplodeOnHit" value="true"/>
+			<property name="StickPercent" value="0"/>
+			<property name="TraderStageTemplate" value="baseTier2"/>
+			<!--property name="UnlockedBy" value="craftingSpecialGrenades"/-->
+			<property name="Group" value="Ammo/Weapons,Ammo"/>
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value="0"/>
+				<property name="Throw_strength_default" value="10"/>
+				<property name="Throw_strength_max" value="50"/>
+				<property name="Max_strain_time" value="1.25"/>
+				<property name="Sound_start" value="grenade_throw"/>
+				<property name="Gravity" value="-5"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="Activate"/>
+				<property name="Delay" value="1"/>
+				<property name="Sound_start" value="grenade_pullpin"/>
+			</property>
+			<property name="ThrowableDecoy" value="true"/>
+			<effect_group tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkDemolitionsExpert"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="15" tags="perkDemolitionsExpert"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="AddBuff" target="other" buff="buffInjuryGStunned"/>
+				<triggered_effect trigger="onSelfExplosionDamagedOther" action="Ragdoll" target="other" duration="5" force="20"/>
+				
+				<display_value name="dExRadius" value="5"/>
+				<display_value name="dFuseTime" value="3"/>
+				<display_value name="dStunDuration" value="5"/>
+			</effect_group>
+		</item>
+
+	</append>
+		
+</configs>

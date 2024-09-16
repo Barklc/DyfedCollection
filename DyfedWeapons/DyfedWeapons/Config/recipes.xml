@@ -1,0 +1,10 @@
+<configs>
+	<include filename="Ranged/StunGrenade/StunGrenade_recipes.xml"/>
+	<include filename="Ranged/ShockGrenade/ShockGrenade_recipes.xml"/>
+	<include filename="Ranged/RocketLauncher/RocketLauncher_recipes.xml"/>
+	<include filename="Melee/Katana/Katana_recipes.xml"/>
+	<include filename="Melee/Sword/Sword_recipes.xml"/>		
+	
+	<!-- Remove after current server done -->
+	<include filename="Melee/KatanaT3/KatanaT3_recipes.xml"/>
+</configs>

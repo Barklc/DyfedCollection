@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/recipes">
+		
+													<!-- Shock Grenade -->		
+
+   		<recipe name="thrownShockGrenadeDyfed" count="1" craft_time="16" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceGunPowder" count="14"/>
+			<ingredient name="resourceForgedIron" count="4"/>
+			<ingredient name="resourceSpring" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+		
+   </append>	
+
+</configs>

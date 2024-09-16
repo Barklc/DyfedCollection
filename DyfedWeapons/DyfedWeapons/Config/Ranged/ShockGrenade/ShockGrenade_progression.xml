@@ -1,0 +1,11 @@
+<configs>
+	 
+	<!-- Unlock Grenades with crafting Explosives Skill -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']">	
+		<display_entry item="thrownShockGrenadeDyfed" unlock_level="100" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingRobotics']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="thrownShockGrenadeDyfed"/>
+	</append>	
+	
+</configs>
