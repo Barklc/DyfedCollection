@@ -1,4 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
+meleeKatanaDyfed,items,melee,,,Katana (Dyfed)
+meleeKatanaDyfedDesc,items,melee,,,"Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts."
 meleeKatanaT3Dyfed,items,melee,,,Katana (Dyfed)
 meleeKatanaT3DyfedDesc,items,melee,,,"Katana made from the Finest Steel Just kidding its probably blunt. Improve quality by putting points into perkDeepCuts."
 thrownStunGrenadeDyfed,items,Gun,,,Stun Grenade (Dyfed)

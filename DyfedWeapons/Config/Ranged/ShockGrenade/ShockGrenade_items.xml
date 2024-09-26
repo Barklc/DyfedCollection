@@ -3,9 +3,9 @@
 		
 													<!-- Shock Grenade -->		
 													
-		<item name="thrownShockGrenadeDyfed"> <!-- T2 demolitions (perk 5) -->
+		<item name="thrownShockGrenadeDyfed">
 			<property name="Extends" value="thrownStunGrenadeDyfed"/>
-			<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,explosivesSkill"/>
+			<property name="Tags" value="ammo,weapon,attPerception,perkElectrocutioner"/>
 			<property name="ItemTypeIcon" value="explosion"/>
 			<property name="CustomIcon" value="thrownGrenadeContact"/>
 			<property name="CustomIconTint" value="0000cc"/>
@@ -51,13 +51,18 @@
 			</property>
 			<property name="ThrowableDecoy" value="true"/>
 			<effect_group tiered="false">
-				<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkDemolitionsExpert"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="0" tags="perkDemolitionsExpert"/>
-				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="3.5" buff="buffTazed2"/>
-				
-				<display_value name="dExRadius" value="3.5"/>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="3.2" cvar=".buffShockedDurationStart" operation="set" value="10"/>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="3.2" buff="buffShocked"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkElectrocutioner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkElectrocutioner"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddPart" part="Sparks" prefab="ParticleEffects/p_electric_shock_small" parentTransform="Handle" localPos="0,-.40,0" localRot="0,0,0"/>		
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemovePart" part="Sparks" />		
+				<!-- onSelfSecondaryActionEnd onSelfActivate-->
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="DamageElectric" operation="add" value="14"/>
+				<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="ShockCharge" operation="add" value="14"/>
 				<display_value name="ElectricalDamage" value="150"/>
-				<display_value name="dShockDuration" value="10"/>
+				<display_value name="dShockCharge" title_key="statShockCharge" value="10"/>
+				<display_value name="dExRadius" value="3"/>
 			</effect_group>
 		</item>
 	</append>

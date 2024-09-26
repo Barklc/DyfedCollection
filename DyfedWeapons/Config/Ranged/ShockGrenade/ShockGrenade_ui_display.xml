@@ -1,13 +1,13 @@
 <configs>
 	<append xpath="/ui_display_info">
 			
-													<!-- Shock Grenade -->
-													 
-			<item_display_info display_type="ammoShockGrenadeDyfed" display_group="groupAmmo">
-				<display_entry name="dExRadius" title_key="statExRadius"/>
-				<display_entry name="ElectricalDamage" title_key="statEntityDamageElectrical" tags="perkDemolitionsExpert,admin"/>
-				<display_entry name="dShockDuration" title_key="statShockDuration" display_type="Time"/>
-			</item_display_info>
-		</item_display>								
+												<!-- Shock Grenade -->
+												 
+		<item_display_info display_type="ammoShockGrenadeDyfed" display_group="groupAmmo">
+			<display_entry name="dExRadius" title_key="statExRadius"/>
+			<display_entry name="ElectricalDamage" title_key="statEntityDamageElectrical" tags="perkDemolitionsExpert,admin"/>
+			<display_entry name="dShockDuration" title_key="statShockDuration" display_type="Time"/>
+		</item_display_info>
+							
 	</append>
 </configs>

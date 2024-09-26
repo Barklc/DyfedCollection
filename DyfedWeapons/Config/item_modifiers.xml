@@ -1,0 +1,3 @@
+<configs>
+	<include filename='Melee/Sword/Sword_item_modifiers.xml'/>
+</configs>

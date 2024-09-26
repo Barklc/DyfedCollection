@@ -1,7 +1,10 @@
 <configs>
-	<include filename="Ranged/Grenades/StunGrenade_progression.xml"/>
-	<!--include filename="Ranged/ShockGrenade/ShockGrenade_progression.xml"/-->
+	<include filename="Ranged/StunGrenade/StunGrenade_progression.xml"/>
+	<include filename="Ranged/ShockGrenade/ShockGrenade_progression.xml"/>
 	<include filename="Ranged/RocketLauncher/RocketLauncher_progression.xml"/>	 
 	<include filename="Melee/Katana/Katana_progression.xml"/>	 
-	<include filename="Melee/Sword/Sword_progression.xml"/>
+	<include filename="Melee/Sword/Sword_progression.xml"/>	
+	
+	<!-- Remove after current server done -->
+	<include filename="Melee/KatanaT3/KatanaT3_progression.xml"/>	
 </configs>

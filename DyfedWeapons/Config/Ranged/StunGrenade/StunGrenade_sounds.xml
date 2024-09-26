@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/Sounds">
+		
+													<!-- Stun Grenade -->		
+													
+		<SoundDataNode name="stun_explosion">
+			<AudioSource name="Sounds/AudioSource_Explosion"/>`
+			<Noise ID="0" noise="81" time="2" muffled_when_crouched="0.8" heat_map_strength="100.0" heat_map_time="180"/>
+			<!--AudioClip ClipName="#@modfolder:Resources/DyfedWeapons.unity3d?StunGrenadeBlast"/-->
+			<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode1"/>
+			<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode2"/>
+			<AudioClip ClipName="Sounds/Weapons/Thrown/Molotov/molotov_explode3"/>
+			<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="30"/> <MaxRepeatRate value="0.001"/>
+		</SoundDataNode>
+	</append>
+</configs>

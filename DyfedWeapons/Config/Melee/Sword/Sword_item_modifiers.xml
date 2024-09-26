@@ -1,0 +1,7 @@
+<configs>
+	<insertBefore xpath="item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/effect_group[@tiered='false']">
+			<item_property_overrides name="meleeSwordDyfed">
+				<property name="FlameEffect" value="@:ItemModEffects/mod_bat_flamePrefab.prefab"/>
+			</item_property_overrides>
+	</insertBefore>
+</configs>

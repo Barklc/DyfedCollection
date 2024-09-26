@@ -1,0 +1,15 @@
+<configs>
+	<append xpath="/ui_display_info">
+		
+													<!-- Stun Grenade -->		
+													
+		<item_display>
+			<item_display_info display_type="ammoStunGrenadeDyfed" display_group="groupAmmo">
+				<display_entry name="EntityDamage" title_key="statEntityDamageExplosion" tags="perkDemolitionsExpert,admin"/>
+				<display_entry name="dExRadius" title_key="statExRadius"/>
+				<display_entry name="dFuseTime" title_key="statFuseTime" display_type="Time" negative_preferred="true"/>
+				<display_entry name="dStunDuration" title_key="statStunDuration" display_type="Time"/>
+			</item_display_info>
+		</item_display>
+	</append>
+</configs>
